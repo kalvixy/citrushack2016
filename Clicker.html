@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700,200" rel="stylesheet" type="text/css">
+
+    
+    <title>Citrus Juicer</title>
+        
+         <link href="style.css" type="text/css" rel="stylesheet">
+        
+    <script>
+         var clicks = 0;
+         var binClicks = 0;
+            
+        function myFunction() {
+    
+            clicks += 1;
+            binClicks = (clicks >>> 0).toString(2);
+            document.getElementById("citrus_clicker1").innerHTML = clicks;
+            document.getElementById("citrus_clicker2").innerHTML = binClicks;
+        }
+            
+    
+        function reset() {
+            clicks = binClicks = 0;
+            document.getElementById("citrus_clicker1").innerHTML = clicks;
+            document.getElementById("citrus_clicker2").innerHTML = binClicks;
+        }
+    
+    
+    </script>
+</head>
+
+<body background="http://i.imgur.com/9v0awlm.jpg">
+    
+   
+
+    <h1 align="middle">Juice the Orange!</h1>
+    
+    <div align = "middle">
+        <button1 onclick="myFunction()" style="border-radius: 50%"><img src="https://avatars0.githubusercontent.com/u/6558871?v=3&s=280"></button1>
+    </div>
+    
+    <h3 align="middle">Regular</h3>
+    <h3 id="citrus_clicker1" align="middle"></h3>
+    
+    
+    <h3 align="middle">Binary conversion</h3>
+    <h3 id="citrus_clicker2" align="middle"></h3>
+    
+    <div>
+        <button2 onclick="reset()" style="border-radius: 50%; padding: 20px"><img src="http://findicons.com/files/icons/1742/ecqlipse_2/128/power_restart.png"></button2>
+    </div>
+
+
+</body>
+</html>
